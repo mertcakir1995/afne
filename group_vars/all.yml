@@ -1,0 +1,19 @@
+---
+# Default Connectivity Variables
+# This will be used at every device, but if another YML File is being used
+# and has the same feature, it will use that feature instead of the all.yml feature.
+ansible_user: "mert"
+ansible_ssh_pass: "mert1995"
+ansible_network_os: "ios"
+ansible_connection: "network_cli"
+
+# Use this to make sure you can use enable commands
+ansible_become: yes
+ansible_become_method: enable
+ansible_become_pass: "mert1995"
+
+
+# Global Config Variables
+ntp:
+    server1: 10.10.10.10
+

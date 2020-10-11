@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e17c0e10-417c-437b-a1d8-33ddc4334ab7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1iTb6CRuroo6cIHekg8I4EPSHOk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e17c0e10-417c-437b-a1d8-33ddc4334ab7" name="Default Changelist" comment="" />
+      <created>1601932426890</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601932426890</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.cfg" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="256" y="199" width="568" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601934126645">
+      <screen x="67" y="27" width="957" height="741" />
+    </state>
+    <state x="256" y="199" width="568" height="403" key="#com.intellij.fileTypes.FileTypeChooser/67.27.957.741@67.27.957.741" timestamp="1601934126645" />
+    <state x="286" y="285" width="488" height="271" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1602168787015">
+      <screen x="67" y="27" width="957" height="741" />
+    </state>
+    <state x="286" y="285" width="488" height="271" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.957.741@67.27.957.741" timestamp="1602168787015" />
+    <state x="208" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1601934264050">
+      <screen x="67" y="27" width="957" height="741" />
+    </state>
+    <state x="208" y="89" width="672" height="678" key="search.everywhere.popup/67.27.957.741@67.27.957.741" timestamp="1601934264050" />
+    <state x="270" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601934207365">
+      <screen x="67" y="27" width="957" height="741" />
+    </state>
+    <state x="270" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/67.27.957.741@67.27.957.741" timestamp="1601934207365" />
+  </component>
+</project>

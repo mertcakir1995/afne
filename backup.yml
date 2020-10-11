@@ -1,0 +1,44 @@
+---
+# Playbook to Backup all config and produce show outputs
+
+- hosts: localhost
+  gather_facts: false
+
+# Module to get actual date/time.  
+  tasks:
+   - name: Get ansible date/time facts
+     setup:
+       filter: "ansible_date_time"
+       gather_subset: "!all"
+
+# Store as a fact variable.
+   - name: Store DTG as fact
+     set_fact:
+       DTG: "{{ ansible_date_time.date }}"
+
+# Command to create a folder (DO NOT USE ~ as path)
+   - name: Create Directory {{hostvars.localhost.DTG}} 
+     file: 
+        path: /home/afne/backups/{{hostvars.localhost.DTG}}
+        mode: 0755
+        state: directory
+
+        
+
+- hosts: vIOS_Routers
+  connection: local
+  gather_facts: false
+
+# Use show run on IOS devices.
+  tasks:
+   - name: Show Run on Device
+     ios_command:
+       commands:
+         - show run
+     register: config
+
+# Read the config and save config in file location as [time/date.txt]
+   - name: Save output to /backups
+     copy:
+       content: "{{config.stdout[0]}}"
+       dest: "/home/afne/backups/{{hostvars.localhost.DTG}}/{{inventory_hostname}}-{{hostvars.localhost.DTG}}-config.txt"

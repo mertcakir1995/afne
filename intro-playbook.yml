@@ -1,0 +1,17 @@
+---
+  ## Playbook to show version on IOS
+  ## Script to use a show version and save it in a text file.
+  - hosts: vIOS_Routers
+
+    tasks:
+      - name: Show Version
+        ios_command:
+          commands: show version
+          # Output from show version will be put into variable register "version".
+        register: version
+
+      - name: Save output to ~/afne/
+        copy:
+          content: "{{version.stdout[0]}}"
+          # Create file with each hostname with the output.
+          dest: "/home/afne/{{inventory_hostname}}-version.txt"

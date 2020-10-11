@@ -1,0 +1,12 @@
+## Ansible Hosts File
+
+## Creates a group including 4 individual hosts in it.
+[vIOS_Routers]
+vIOS1 ansible_host=192.168.1.220
+vIOS2 ansible_host=192.168.1.221
+vIOS3 ansible_host=192.168.1.222
+vIOS4 ansible_host=192.168.1.223
+
+[nxos]
+N9Kv-1  ansible_host=192.168.1.226
+N9Kv-2  ansible_host=192.168.1.227

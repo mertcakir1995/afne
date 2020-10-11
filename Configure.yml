@@ -1,0 +1,23 @@
+---
+- hosts: vIOS_Routers
+
+# Script that configure cisco devices via normal commands.
+  tasks:
+  - name: Configure a single command
+    ios_config:
+        lines: ntp server 9.9.9.9
+
+# Script that configure cisco devices via text file.
+  - name: Configure multiple lines of code from text file
+    ios_config:
+      src: "/home/afne/configs/config1.txt"
+
+# Script to use Jinja2 template
+  - name: Configure from Jinja2 template
+    ios_config:
+        src: "./Jinja2.j2"
+
+# Write mem
+  - name: Save the config
+    ios_config:
+      save_when: always

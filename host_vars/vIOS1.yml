@@ -1,0 +1,7 @@
+---
+# vIOS1 Specific Connectivity Information
+# Incase other devices some different credentials?
+ansible_user: "mert2"
+
+hostname:
+    name: CSR-ONE
